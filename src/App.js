@@ -2,8 +2,8 @@
 import './App.css';
 import './fonts/Vilane Regular.ttf'
 import './fonts/Vilane Medium.ttf'
-import Hamburger from './components/hamburger/Hamburger'
-import { useState } from 'react';
+import Header from './components/header/Header';
+import Login from './components/loginPage/Login'
 
 
 function App() {
@@ -12,9 +12,15 @@ function App() {
 
       <div className="wrapper">
         <div className='container'>
-          <Hamburger />
+          <Header />
           
+
         </div>
+
+        <div className='formContainer'>
+          <Login />
+        </div>
+
       </div>
     </div>
   );

@@ -45,6 +45,8 @@
 }
 
 .list {
+    width: 100%;
+    flex-direction: column;
     margin: 0px 0px 50px 0px;
     list-style: none;
 }
@@ -59,7 +61,8 @@
     text-decoration: none;
     position: relative;
     padding: 3px 0px;
-   cursor: pointer;
+    cursor: pointer;
+    letter-spacing: 3px;
 }
 
 .link::before,
@@ -86,6 +89,18 @@
 }
 
 .link:hover::before,
-.link:hover::after {
-    transform: scaleX(1)
+.link:hover::after{
+    transform: scaleX(1);
 }
+
+
+
+
+@media only screen and (min-width: 700px) {
+    
+    .hamburger {
+        display: none;
+    }
+
+}
+

@@ -16,13 +16,11 @@ const Hamburger = () => {
 
     let change = classAdded ? 'closed': ''
 
-
-    
-
     return (
 
-        <div onClick={toggle} className={`hamburger ${change}`}>
-            <div className='lines'>
+        <div  className={`hamburger ${change}`}>
+            
+            <div onClick={toggle} className='lines'>
                 <div className='line'></div>
                 <div className='line'></div>
                 <div className='line'></div>
@@ -31,13 +29,13 @@ const Hamburger = () => {
             <div className='menu'>
                 <ul className='list'>
                     <li className='item'>
-                        <a className='link' href='#'>Dashboard</a>
+                        <a className='link' href='/dashboard'>Dashboard</a>
                     </li>
                     <li className='item'>
-                        <a className='link' href='#'>Communities</a>
+                        <a className='link' href='/communities'>Communities</a>
                     </li>
                     <li className='item'>
-                        <a className='link' href='#'>Messages</a>
+                        <a className='link' href='/messages'>Messages</a>
                     </li>
                 </ul>
             </div>

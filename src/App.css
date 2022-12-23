@@ -9,19 +9,34 @@
     src: local("Vilane Medium") url("./fonts/Vilane\ Medium.ttf");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Custom';
+    font-family: 'Poppins';
 }
 
 .wrapper {
     height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(10DEG, #143046, #446cb3);
+    
+    
     
 }
 
 .container {
-    width: 100%;
+    padding: 30px;
     
+    
+}
+
+.formContainer {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
 }
