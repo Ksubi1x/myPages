@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hamburger.css'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 
@@ -29,13 +30,13 @@ const Hamburger = () => {
             <div className='menu'>
                 <ul className='list'>
                     <li className='item'>
-                        <a className='link' href='/dashboard'>Dashboard</a>
+                        <Link className='link' to='/login'>Login</Link>
                     </li>
                     <li className='item'>
-                        <a className='link' href='/communities'>Communities</a>
+                        <Link className='link' to='/register'>Register</Link>
                     </li>
                     <li className='item'>
-                        <a className='link' href='/messages'>Messages</a>
+                        <Link className='link' to='/about'>About</Link>
                     </li>
                 </ul>
             </div>

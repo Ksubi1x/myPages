@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css'
 import Hamburger from '../hamburger/Hamburger'
-
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -17,15 +17,15 @@ const Header = () => {
 
                     <ul className='linksH'>
                         <li>
-                            <a className='linkH' href='/dashboard'>Dashboard</a>
+                            <Link className='linkH' to='/login'>Login</Link>
                         </li>
 
                         <li>
-                            <a className='linkH' href='/communities'>Communities</a>
+                            <Link className='linkH' to='/register'>Register</Link>
                         </li>
 
                         <li>
-                            <a className='linkH' href='/messages'>Messages</a>
+                            <Link className='linkH' to='/about'>About</Link>
                         </li>
                     </ul>
                 </div>
